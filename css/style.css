@@ -1,0 +1,250 @@
+:root {
+    --color-main: #bc0d2d;
+    --color-sub: #9d9b7d;
+}
+
+/* header 시작 */
+header {
+    width: 100%;
+    height: 65px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    z-index: 99;
+    padding: 10px 50px;
+    box-sizing: border-box;
+}
+header ul {
+    display: flex;
+    gap: 30px;
+}
+header li {
+    width: 70px;
+    text-align: center;
+}
+header li a {
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+}
+header .logo {
+    width: 50px;
+}
+header div {
+    width: 470px;
+    display: flex;
+    justify-content: flex-end;
+    cursor: pointer;
+}
+header h4 {
+    width: 70px;
+    background-color: var(--color-main);
+    border-radius: 30px;
+    font-size: 18px;
+    color: #fff;
+    padding: 5px 10px;
+    text-align: center;
+}
+
+/* visual  시작 */
+#visual {
+    width: 100%;
+    height: 100vh;
+
+    /*아이프레임 동영상 비율조절 SET*/
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+}
+#visual iframe {
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* nav 시작 */
+nav {
+    width: 500px;
+    height: 600px;
+    background-color: var(--color-main);
+    border-radius: 20px;
+    color: #fff;
+    padding: 50px;
+    position: absolute;
+    top: 100px;
+    right: 50px;
+}
+nav .close {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 35px;
+    cursor: pointer;
+}
+nav > .menu > li {
+    margin: 35px 0px;
+    font-size: 40px;
+}
+nav > .menu > li a {
+    color: #fff;
+}
+
+nav .sub {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+nav div {
+    width: 400px;
+    height: 80px;
+    border-radius: 20px;
+    background-image: url(../img/mall.PNG);
+    background-repeat: no-repeat;
+    background-position: top;
+    position: relative;
+}
+nav div::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 20px;
+    position: absolute;
+}
+nav div h4 {
+    width: 230px;
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: #fff;
+}
+nav div .right {
+    position: absolute;
+    top: 50%;
+    right: 200px;
+    /* rigth 170px .on */
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: #fff;
+    display: none;
+}
+
+/*container 시작*/
+.container {
+    width: 100vw;
+    height: 100vh;
+}
+
+/*con1 시작*/
+.con1 {
+    width: 1400px;
+    height: 600px;
+    margin: 50px auto;
+    background-image: url(../img/main_con1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    object-fit: cover;
+    border-radius: 30px;
+    position: relative;
+}
+
+.con1 h2 {
+    width: 550px;
+    background-color: #fff;
+    font-size: 40px;
+    text-align: center;
+    padding: 5px;
+    position: absolute;
+    top: 70px;
+    left: 50px;
+}
+
+/*con2 시작*/
+.con2 {
+    width: 150%;
+    margin-bottom: 100px;
+}
+.con2 > h2 {
+    font-size: 40px;
+    padding-left: 350px;
+}
+.con2 > p {
+    font-size: 20px;
+    padding-left: 350px;
+    margin-top: 30px;
+}
+.con2 .wrap {
+    display: flex;
+    gap: 30px;
+    transform: translateX(-480px);
+    margin-top: 50px;
+}
+.con2 .merit {
+    width: 700px;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 30px;
+    position: relative;
+    transform: translateY(120px);
+}
+.con2 .merit.on {
+    transform: translateY(0px);
+}
+.con2 .merit1 {
+    background-image: url(../img/merit1.PNG);
+}
+.con2 .merit2 {
+    background-image: url(../img/merit2.PNG);
+}
+.con2 .merit3 {
+    background-image: url(../img/merit3.PNG);
+}
+.con2 .merit4 {
+    background-image: url(../img/merit4.PNG);
+}
+.con2 .merit h2 {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    font-size: 30px;
+}
+/* .con2 .merit h2::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+} */
+.con2 .txt {
+    margin-left: 20px;
+}
+.con2 .txt h4 {
+    font-size: 20px;
+    margin: 10px 0px;
+}
+
+/* con3 시작 */
+.con3 {
+    width: 100%;
+    background-color: #badf6b;
+    text-align: center;
+}
+.con3 h2 {
+    font-size: 50px;
+}
+.con3 p {
+    font-size: 20px;
+    margin-top: 10px;
+}
+.con3 ul {
+    display: flex;
+}
