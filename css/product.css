@@ -1,0 +1,243 @@
+:root {
+    --color-main: #bc0d2d;
+    --color-sub: #959d79;
+}
+
+/* header 시작 */
+header {
+    width: 100%;
+    height: 65px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+header ul {
+    display: flex;
+    gap: 30px;
+}
+header li {
+    width: 70px;
+    text-align: center;
+}
+header li a {
+    color: #000;
+    font-weight: bold;
+    font-size: 18px;
+}
+header .logo {
+    width: 50px;
+}
+header div {
+    width: 470px;
+    display: flex;
+    justify-content: flex-end;
+    cursor: pointer;
+}
+header h4 {
+    width: 70px;
+    background-color: var(--color-main);
+    border-radius: 30px;
+    font-size: 18px;
+    color: #fff;
+    padding: 5px 10px;
+    text-align: center;
+}
+/* visual 시작 */
+.visual {
+    width: 85%;
+    height: 800px;
+    background-image: url(../img/product_visual.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto;
+    border-radius: 50px 50px 0 0;
+    position: relative;
+}
+.visual .more {
+    width: 100px;
+    background-color: #fff;
+    text-align: center;
+    padding: 10px;
+    border-radius: 50px;
+    position: absolute;
+    right: 100px;
+    bottom: 50px;
+}
+.visual .more a {
+    display: block;
+}
+/* nav 시작 */
+nav {
+    width: 500px;
+    height: 600px;
+    background-color: var(--color-main);
+    border-radius: 20px;
+    color: #fff;
+    padding: 50px;
+    position: absolute;
+    top: 100px;
+    right: 50px;
+    display: none;
+}
+nav .close {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 35px;
+    cursor: pointer;
+}
+nav > .menu > li {
+    margin: 35px 0px;
+    font-size: 40px;
+}
+nav > .menu > li a {
+    color: #fff;
+}
+
+nav .sub {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+nav div {
+    width: 400px;
+    height: 80px;
+    border-radius: 20px;
+    background-image: url(../img/mall.PNG);
+    background-repeat: no-repeat;
+    background-position: top;
+    position: relative;
+}
+nav div::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 20px;
+    position: absolute;
+}
+nav div h4 {
+    width: 230px;
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: #fff;
+}
+nav div .right {
+    position: absolute;
+    top: 50%;
+    right: 200px;
+    /* rigth 170px .on */
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: #fff;
+    display: none;
+}
+
+/* container */
+.container {
+    width: 100%;
+}
+
+/* menu 시작 */
+.menu {
+    width: 100%;
+    height: 200px;
+    background-color: #eee;
+    align-content: center;
+}
+.menu ul {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+.menu li p {
+    text-align: center;
+    margin: 10px 0;
+}
+.menu li img {
+    width: 80px;
+    height: 120px;
+}
+
+/* con2 */
+.con2 {
+    width: 1400px;
+    margin: 0 auto;
+}
+.con2 h3 {
+    margin: 80px 0 50px;
+}
+
+.con2_wrap {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+.con2_wrap .product_txt {
+    width: 300px;
+    margin-top: 70px;
+}
+.con2_wrap .product_txt h2 {
+    font-size: 40px;
+}
+.con2_wrap .product_txt h4 {
+    margin: 30px 0;
+}
+.con2_wrap .product_txt p {
+    line-height: 25px;
+}
+.con2_wrap .product_txt .circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: var(--color-main);
+    margin-top: 30px;
+    align-content: center;
+    text-align: center;
+}
+.con2_wrap .product_txt .circle .arright {
+    font-size: 20px;
+
+    color: #fff;
+}
+.con2_wrap .product_img {
+    position: relative;
+    width: 450px;
+}
+.con2_wrap .product_img li {
+    position: absolute;
+    top: 0;
+    display: none;
+}
+.con2_wrap .product_img li.on {
+    display: block;
+}
+.con2_wrap .product_img img {
+    width: 350px;
+    height: 400px;
+}
+.con2_wrap .product_name {
+    margin-top: 50px;
+}
+.con2_wrap .product_name li {
+    width: 100%;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+.con2_wrap .product_name p {
+    padding-bottom: 10px;
+    color: #777;
+}
+.con2_wrap .product_name li.on p {
+    width: 100%;
+    border-bottom: 3px solid #000;
+    color: var(--color-main);
+}
