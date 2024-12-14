@@ -28,6 +28,9 @@
         font-weight: bold;
         font-size: 18px;
     }
+    header .home {
+        display: none;
+    }
     header .logo {
         width: 50px;
     }
@@ -45,6 +48,9 @@
         color: #fff;
         padding: 5px 10px;
         text-align: center;
+    }
+    header .bar {
+        display: none;
     }
 
     /* visual  시작 */
@@ -1391,6 +1397,9 @@
     }
     .footer_txt ul {
         display: flex;
+    }
+    .footer_txt p {
+        margin: 10px 0;
     }
     .footer_txt img {
         width: 50px;
