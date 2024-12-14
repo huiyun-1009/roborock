@@ -7,6 +7,7 @@ body {
     overflow-x: hidden;
     font-family: "TheJamsil3Regular";
     letter-spacing: 1px;
+    word-break: keep-all;
 }
 ul {
     list-style: none;

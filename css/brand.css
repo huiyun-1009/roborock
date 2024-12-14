@@ -16,10 +16,9 @@ header {
 }
 header ul {
     display: flex;
-    gap: 20px;
+    gap: 50px;
 }
 header li {
-    width: 90px;
     text-align: center;
 }
 header li a {
@@ -78,7 +77,7 @@ header h4 {
 /* nav 시작 */
 nav {
     width: 500px;
-    height: 600px;
+    height: 700px;
     background-color: var(--color-main);
     border-radius: 20px;
     color: #fff;
