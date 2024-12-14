@@ -17,10 +17,9 @@
     }
     header ul {
         display: flex;
-        gap: 20px;
+        gap: 50px;
     }
     header li {
-        width: 90px;
         text-align: center;
     }
     header li a {
@@ -220,7 +219,7 @@
         background-image: url(../img/merit1.PNG);
     }
     .con2 .merit2 {
-        background-image: url(../img/merit2.png);
+        background-image: url(../img/merit2.PNG);
     }
     .con2 .merit3 {
         background-image: url(../img/merit3.PNG);
@@ -686,7 +685,7 @@
         background-image: url(../img/merit1.PNG);
     }
     .con2 .merit2 {
-        background-image: url(../img/merit2.png);
+        background-image: url(../img/merit2.PNG);
     }
     .con2 .merit3 {
         background-image: url(../img/merit3.PNG);
@@ -1141,7 +1140,7 @@
         background-image: url(../img/merit1.PNG);
     }
     .con2 .merit2 {
-        background-image: url(../img/merit2.png);
+        background-image: url(../img/merit2.PNG);
     }
     .con2 .merit3 {
         background-image: url(../img/merit3.PNG);
