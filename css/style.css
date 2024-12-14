@@ -461,11 +461,6 @@
 /*----------------------------------------------태블릿*/
 
 @media (max-width: 1200px) and (min-width: 760px) {
-    :root {
-        --color-main: #bc0d2d;
-        --color-sub: #959d79;
-    }
-
     /* header 시작 */
     header {
         width: 100%;
