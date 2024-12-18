@@ -14,6 +14,13 @@
         <link rel="icon" href="/img/logo.ico" />
         <link rel="stylesheet" href="css/reset.css" />
         <link rel="stylesheet" href="css/style.css" />
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/ScrollToPlugin.min.js"></script>
+        <script src="js/jquery-3.7.1.min.js"></script>
+        <script src="js/index.js"></script>
     </head>
     <body>
         <!-- header 시작 -->
@@ -99,7 +106,7 @@
         <div class="container">
             <!-- con1 시작 -->
 
-            <section class="con1">
+            <section class="con1" id="cont1">
                 <h2>New Product</h2>
                 <div class="con1_wrap">
                     <h2>Introducing S8 MaxV Ultra</h2>
@@ -117,7 +124,7 @@
                     </div>
                     <ul class="wrap">
                         <li>
-                            <div class="merit1 merit">
+                            <div class="merit1 merit on">
                                 <h2>Maintenance-<br />free Docking</h2>
                             </div>
                             <div class="txt">
@@ -130,7 +137,7 @@
                             </div>
                         </li>
                         <li>
-                            <div class="merit2 merit on">
+                            <div class="merit2 merit">
                                 <h2>
                                     Outstanding<br />
                                     Cleaning
@@ -186,14 +193,8 @@
             <section class="con3">
                 <h2>BEST REVIEW</h2>
                 <p>고객님의 소중한 후기 감사합니다</p>
-                <ul>
+                <ul class="review">
                     <li>
-                        <img
-                            src="img/review1.PNG"
-                            alt="로보락 제품 리뷰이미지"
-                        />
-                    </li>
-                    <li class="active">
                         <img
                             src="img/review1.PNG"
                             alt="로보락 제품 리뷰이미지"
@@ -201,10 +202,32 @@
                     </li>
                     <li>
                         <img
-                            src="img/review1.PNG"
+                            src="img/review2.PNG"
                             alt="로보락 제품 리뷰이미지"
                         />
                     </li>
+                    <li>
+                        <img
+                            src="img/review3.PNG"
+                            alt="로보락 제품 리뷰이미지"
+                        />
+                    </li>
+                    <li>
+                        <img
+                            src="img/review3.PNG"
+                            alt="로보락 제품 리뷰이미지"
+                        />
+                    </li>
+                    <li>
+                        <img
+                            src="img/review3.PNG"
+                            alt="로보락 제품 리뷰이미지"
+                        />
+                    </li>
+                </ul>
+                <ul class="btn">
+                    <li class="left"><</li>
+                    <li class="right">></li>
                 </ul>
                 <div class="insta_top">
                     <div class="circle"></div>

@@ -3,6 +3,17 @@
     --color-sub: #959d79;
 }
 
+header li.on {
+    transform: scale(1.1);
+}
+header li.on a {
+    color: var(--color-main);
+}
+.con1 .con1_wrap {
+    width: 0;
+    opacity: 0;
+}
+
 @media (min-width: 1200px) {
     /* header 시작 */
     header {
@@ -18,10 +29,18 @@
     header ul {
         display: flex;
         gap: 50px;
+        position: relative;
     }
     header li {
         text-align: center;
     }
+    header li::before {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
     header li a {
         color: #000;
         font-weight: bold;
@@ -78,10 +97,11 @@
         background-color: var(--color-main);
         border-radius: 20px;
         color: #fff;
-        padding: 50px;
+        padding: 30px 30px 50px;
         position: absolute;
         top: 100px;
         right: 50px;
+        display: none;
     }
     nav .close {
         display: flex;
@@ -165,6 +185,11 @@
         object-fit: cover;
         border-radius: 30px;
         position: relative;
+    }
+    .con1 .con1_wrap.on {
+        width: 1400px;
+        opacity: 1;
+        transition: 1s;
     }
 
     .con1_wrap h2 {
@@ -264,18 +289,43 @@
         text-align: center;
     }
     .con3 ul {
+        width: 100%;
         display: flex;
-        justify-content: space-around;
+        gap: 130px;
+        justify-content: center;
+        position: relative;
     }
     .con3 li {
         margin: 50px 0;
         transform: scale(0.7);
     }
+    .con3 li:nth-child(3) {
+        transform: scale(0.9);
+    }
+    .con3 li:nth-child(3) img {
+        opacity: 1;
+    }
     .con3 li img {
         width: 500px;
+        height: 600px;
+        opacity: 0.5;
     }
-    .con3 li.active {
-        transform: scale(0.9);
+
+    .con3 .btn {
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 50px;
+        cursor: pointer;
+    }
+    .con3 .btn .left {
+        position: absolute;
+        left: 100px;
+    }
+    .con3 .btn .right {
+        position: absolute;
+        right: 100px;
     }
     .insta_top {
         width: 450px;
@@ -288,7 +338,7 @@
         box-sizing: border-box;
         border-radius: 10px 10px 0 0;
         position: absolute;
-        top: 160px;
+        top: 170px;
         left: 50%;
         transform: translateX(-50%);
     }
@@ -613,7 +663,6 @@
         margin-bottom: 50px;
     }
     .con1 .con1_wrap {
-        width: 90%;
         height: 600px;
         margin: 0 auto;
         background-image: url(../img/main_con1.jpg);
@@ -623,6 +672,11 @@
         object-fit: cover;
         border-radius: 30px;
         position: relative;
+    }
+    .con1 .con1_wrap.on {
+        width: 95%;
+        opacity: 1;
+        transition: 1s;
     }
 
     .con1_wrap h2 {
@@ -727,16 +781,38 @@
     .con3 ul {
         display: flex;
         justify-content: center;
+        position: relative;
     }
     .con3 li {
         margin: 50px 0;
         transform: scale(0.7);
     }
+    .con3 li:nth-child(3) {
+        transform: scale(0.9);
+    }
+    .con3 li:nth-child(3) img {
+        opacity: 1;
+    }
     .con3 li img {
         width: 500px;
+        height: 600px;
+        opacity: 0.5;
     }
-    .con3 li.active {
-        transform: scale(0.9);
+    .con3 .btn {
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 50px;
+        cursor: pointer;
+    }
+    .con3 .btn .left {
+        position: absolute;
+        left: 100px;
+    }
+    .con3 .btn .right {
+        position: absolute;
+        right: 100px;
     }
     .insta_top {
         width: 450px;
@@ -1060,7 +1136,6 @@
         margin-bottom: 50px;
     }
     .con1 .con1_wrap {
-        width: 90%;
         height: 500px;
         margin: 0 auto;
         background-image: url(../img/main_con1.jpg);
@@ -1070,6 +1145,11 @@
         object-fit: cover;
         border-radius: 30px;
         position: relative;
+    }
+    .con1 .con1_wrap.on {
+        width: 95%;
+        opacity: 1;
+        transition: 1s;
     }
 
     .con1_wrap h2 {
@@ -1177,23 +1257,39 @@
     }
     .con3 > p {
         font-size: 20px;
-        margin-top: 10px;
+        margin: 10px 0 50px;
         text-align: center;
     }
     .con3 ul {
         display: flex;
         justify-content: center;
+        gap: 100px;
+        position: relative;
     }
     .con3 li {
         margin: 50px 0;
-        transform: scale(0.7);
     }
+
     .con3 li img {
-        width: 500px;
+        width: 450px;
+        height: 500px;
     }
-    .con3 li.active {
-        transform: scale(0.9);
+    .con3 .btn {
+        width: 100%;
+        position: absolute;
+        bottom: 130px;
+        font-size: 50px;
+        cursor: pointer;
     }
+    .con3 .btn .left {
+        position: absolute;
+        left: 150px;
+    }
+    .con3 .btn .right {
+        position: absolute;
+        right: 150px;
+    }
+
     .insta_top {
         width: 450px;
         background-color: #fff;
